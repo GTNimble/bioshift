@@ -1,0 +1,160 @@
+{
+  "note": "Sample data (CMS-shaped seed), not a live CMS extract. Purple Book–style linkages for demo only.",
+  "families": [
+    {
+      "familyId": "adalimumab",
+      "ingredient": "adalimumab",
+      "referenceBrand": "Humira",
+      "referenceApplicant": "AbbVie Inc",
+      "therapeuticArea": "Rheumatology / Dermatology / GI",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 4200000000,
+      "products": [
+        { "productId": "humira", "name": "Humira", "type": "reference", "interchangeable": false, "applicant": "AbbVie Inc", "approvalYear": 2002 },
+        { "productId": "amjevita", "name": "Amjevita", "type": "biosimilar", "interchangeable": false, "applicant": "Amgen Inc", "approvalYear": 2016 },
+        { "productId": "cyltezo", "name": "Cyltezo", "type": "biosimilar", "interchangeable": true, "applicant": "Boehringer Ingelheim", "approvalYear": 2017 },
+        { "productId": "hadlima", "name": "Hadlima", "type": "biosimilar", "interchangeable": false, "applicant": "Samsung Bioepis / Organon", "approvalYear": 2019 },
+        { "productId": "hyrimoz", "name": "Hyrimoz", "type": "biosimilar", "interchangeable": false, "applicant": "Sandoz", "approvalYear": 2018 },
+        { "productId": "yuflyma", "name": "Yuflyma", "type": "biosimilar", "interchangeable": false, "applicant": "Celltrion", "approvalYear": 2021 },
+        { "productId": "hulio", "name": "Hulio", "type": "biosimilar", "interchangeable": false, "applicant": "Mylan / Biocon", "approvalYear": 2020 },
+        { "productId": "idacio", "name": "Idacio", "type": "biosimilar", "interchangeable": false, "applicant": "Fresenius Kabi", "approvalYear": 2022 }
+      ]
+    },
+    {
+      "familyId": "ustekinumab",
+      "ingredient": "ustekinumab",
+      "referenceBrand": "Stelara",
+      "referenceApplicant": "Janssen Biotech",
+      "therapeuticArea": "Psoriasis / Crohn's / UC",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 2800000000,
+      "products": [
+        { "productId": "stelara", "name": "Stelara", "type": "reference", "interchangeable": false, "applicant": "Janssen Biotech", "approvalYear": 2009 },
+        { "productId": "wezlana", "name": "Wezlana", "type": "biosimilar", "interchangeable": true, "applicant": "Amgen Inc", "approvalYear": 2023 },
+        { "productId": "selarsdi", "name": "Selarsdi", "type": "biosimilar", "interchangeable": false, "applicant": "Alvotech / Teva", "approvalYear": 2024 },
+        { "productId": "pyzchiva", "name": "Pyzchiva", "type": "biosimilar", "interchangeable": false, "applicant": "Samsung Bioepis / Sandoz", "approvalYear": 2024 },
+        { "productId": "yesintek", "name": "Yesintek", "type": "biosimilar", "interchangeable": false, "applicant": "Biocon Biologics", "approvalYear": 2024 }
+      ]
+    },
+    {
+      "familyId": "pegfilgrastim",
+      "ingredient": "pegfilgrastim",
+      "referenceBrand": "Neulasta",
+      "referenceApplicant": "Amgen Inc",
+      "therapeuticArea": "Oncology supportive care",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 650000000,
+      "products": [
+        { "productId": "neulasta", "name": "Neulasta", "type": "reference", "interchangeable": false, "applicant": "Amgen Inc", "approvalYear": 2002 },
+        { "productId": "fulphila", "name": "Fulphila", "type": "biosimilar", "interchangeable": false, "applicant": "Mylan / Biocon", "approvalYear": 2018 },
+        { "productId": "udenyca", "name": "Udenyca", "type": "biosimilar", "interchangeable": false, "applicant": "Coherus BioSciences", "approvalYear": 2018 },
+        { "productId": "ziextenzo", "name": "Ziextenzo", "type": "biosimilar", "interchangeable": false, "applicant": "Sandoz", "approvalYear": 2019 },
+        { "productId": "nyvepria", "name": "Nyvepria", "type": "biosimilar", "interchangeable": false, "applicant": "Pfizer", "approvalYear": 2020 }
+      ]
+    },
+    {
+      "familyId": "insulin_glargine",
+      "ingredient": "insulin glargine",
+      "referenceBrand": "Lantus",
+      "referenceApplicant": "Sanofi-Aventis",
+      "therapeuticArea": "Diabetes",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 3100000000,
+      "products": [
+        { "productId": "lantus", "name": "Lantus", "type": "reference", "interchangeable": false, "applicant": "Sanofi-Aventis", "approvalYear": 2000 },
+        { "productId": "basaglar", "name": "Basaglar", "type": "biosimilar", "interchangeable": false, "applicant": "Eli Lilly / Boehringer", "approvalYear": 2015 },
+        { "productId": "semglee", "name": "Semglee", "type": "biosimilar", "interchangeable": true, "applicant": "Viatris / Biocon", "approvalYear": 2020 },
+        { "productId": "rezvoglar", "name": "Rezvoglar", "type": "biosimilar", "interchangeable": true, "applicant": "Eli Lilly", "approvalYear": 2021 }
+      ]
+    },
+    {
+      "familyId": "insulin_aspart",
+      "ingredient": "insulin aspart",
+      "referenceBrand": "Novolog",
+      "referenceApplicant": "Novo Nordisk",
+      "therapeuticArea": "Diabetes",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 1800000000,
+      "products": [
+        { "productId": "novolog", "name": "Novolog", "type": "reference", "interchangeable": false, "applicant": "Novo Nordisk", "approvalYear": 2000 },
+        { "productId": "fiasp", "name": "Fiasp", "type": "reference", "interchangeable": false, "applicant": "Novo Nordisk", "approvalYear": 2017 },
+        { "productId": "insulin_aspart_sanofi", "name": "Insulin Aspart (Sanofi)", "type": "biosimilar", "interchangeable": false, "applicant": "Sanofi", "approvalYear": 2021 },
+        { "productId": "trurapi", "name": "Trurapi", "type": "biosimilar", "interchangeable": false, "applicant": "Sanofi", "approvalYear": 2021 }
+      ]
+    },
+    {
+      "familyId": "ranibizumab",
+      "ingredient": "ranibizumab",
+      "referenceBrand": "Lucentis",
+      "referenceApplicant": "Genentech",
+      "therapeuticArea": "Ophthalmology",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 900000000,
+      "products": [
+        { "productId": "lucentis", "name": "Lucentis", "type": "reference", "interchangeable": false, "applicant": "Genentech", "approvalYear": 2006 },
+        { "productId": "byooviz", "name": "Byooviz", "type": "biosimilar", "interchangeable": false, "applicant": "Samsung Bioepis / Biogen", "approvalYear": 2021 },
+        { "productId": "cimerli", "name": "Cimerli", "type": "biosimilar", "interchangeable": true, "applicant": "Coherus BioSciences", "approvalYear": 2022 }
+      ]
+    },
+    {
+      "familyId": "etanercept",
+      "ingredient": "etanercept",
+      "referenceBrand": "Enbrel",
+      "referenceApplicant": "Amgen Inc",
+      "therapeuticArea": "Rheumatology / Dermatology",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 2100000000,
+      "products": [
+        { "productId": "enbrel", "name": "Enbrel", "type": "reference", "interchangeable": false, "applicant": "Amgen Inc", "approvalYear": 1998 },
+        { "productId": "erelzi", "name": "Erelzi", "type": "biosimilar", "interchangeable": false, "applicant": "Sandoz", "approvalYear": 2016 },
+        { "productId": "eticovo", "name": "Eticovo", "type": "biosimilar", "interchangeable": false, "applicant": "Samsung Bioepis", "approvalYear": 2019 }
+      ]
+    },
+    {
+      "familyId": "trastuzumab",
+      "ingredient": "trastuzumab",
+      "referenceBrand": "Herceptin",
+      "referenceApplicant": "Genentech",
+      "therapeuticArea": "Oncology",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 480000000,
+      "products": [
+        { "productId": "herceptin", "name": "Herceptin", "type": "reference", "interchangeable": false, "applicant": "Genentech", "approvalYear": 1998 },
+        { "productId": "ogivri", "name": "Ogivri", "type": "biosimilar", "interchangeable": false, "applicant": "Mylan / Biocon", "approvalYear": 2017 },
+        { "productId": "herzuma", "name": "Herzuma", "type": "biosimilar", "interchangeable": false, "applicant": "Celltrion / Teva", "approvalYear": 2018 },
+        { "productId": "kanjinti", "name": "Kanjinti", "type": "biosimilar", "interchangeable": false, "applicant": "Amgen / Allergan", "approvalYear": 2019 },
+        { "productId": "trazimera", "name": "Trazimera", "type": "biosimilar", "interchangeable": false, "applicant": "Pfizer", "approvalYear": 2019 }
+      ]
+    },
+    {
+      "familyId": "rituximab",
+      "ingredient": "rituximab",
+      "referenceBrand": "Rituxan",
+      "referenceApplicant": "Genentech",
+      "therapeuticArea": "Oncology / Rheumatology",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 720000000,
+      "products": [
+        { "productId": "rituxan", "name": "Rituxan", "type": "reference", "interchangeable": false, "applicant": "Genentech", "approvalYear": 1997 },
+        { "productId": "truxima", "name": "Truxima", "type": "biosimilar", "interchangeable": false, "applicant": "Celltrion / Teva", "approvalYear": 2018 },
+        { "productId": "ruxience", "name": "Ruxience", "type": "biosimilar", "interchangeable": false, "applicant": "Pfizer", "approvalYear": 2019 },
+        { "productId": "riabni", "name": "Riabni", "type": "biosimilar", "interchangeable": false, "applicant": "Amgen", "approvalYear": 2020 }
+      ]
+    },
+    {
+      "familyId": "filgrastim",
+      "ingredient": "filgrastim",
+      "referenceBrand": "Neupogen",
+      "referenceApplicant": "Amgen Inc",
+      "therapeuticArea": "Oncology supportive care",
+      "partDRelevant": true,
+      "estAnnualPartDSpendUsd": 210000000,
+      "products": [
+        { "productId": "neupogen", "name": "Neupogen", "type": "reference", "interchangeable": false, "applicant": "Amgen Inc", "approvalYear": 1991 },
+        { "productId": "zarxio", "name": "Zarxio", "type": "biosimilar", "interchangeable": false, "applicant": "Sandoz", "approvalYear": 2015 },
+        { "productId": "nivestym", "name": "Nivestym", "type": "biosimilar", "interchangeable": false, "applicant": "Pfizer", "approvalYear": 2018 },
+        { "productId": "releuko", "name": "Releuko", "type": "biosimilar", "interchangeable": false, "applicant": "Amneal / Kashiv", "approvalYear": 2022 }
+      ]
+    }
+  ]
+}

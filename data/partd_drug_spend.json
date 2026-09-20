@@ -1,0 +1,1670 @@
+{
+  "source": "https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-spending-by-drug/medicare-part-d-spending-by-drug",
+  "datasetId": "7e0b4365-fd63-4a29-8f5e-e0ac9f66a81b",
+  "year": 2024,
+  "offlineSample": false,
+  "note": "CMS Medicare Part D Spending by Drug \u2014 gross Part D (not net of rebates/DIR). Filtered to PurpleGap molecule families (Overall manufacturer rows when available). National drug totals for market context \u2014 not NPI-level opportunity.",
+  "honesty": "Gross Part D national spend; not net of rebates/DIR. Lagged annual release.",
+  "updatedAt": "2026-09-19T14:50:19.309807+00:00",
+  "familyCount": 16,
+  "families": {
+    "adalimumab": {
+      "familyId": "adalimumab",
+      "ingredient": "adalimumab",
+      "referenceBrandHint": "Humira(Cf) Pen",
+      "totalSpendUsd": 5715863099.68,
+      "totalClaims": 652028,
+      "totalBenes": 90349,
+      "priorYearSpendUsd": 6053631248.22,
+      "yoySpendChange": -0.0558,
+      "brandCount": 6,
+      "brands": [
+        {
+          "brandName": "Humira(Cf) Pen",
+          "genericName": "Adalimumab",
+          "spendUsd": 4328698864.2,
+          "claims": 490303,
+          "benes": 63768,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 4419828188.3,
+          "yoySpendChange": -0.0206
+        },
+        {
+          "brandName": "Humira Pen",
+          "genericName": "Adalimumab",
+          "spendUsd": 697405207.41,
+          "claims": 85167,
+          "benes": 11719,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 835162055.59,
+          "yoySpendChange": -0.1649
+        },
+        {
+          "brandName": "Humira(Cf)",
+          "genericName": "Adalimumab",
+          "spendUsd": 400900510.75,
+          "claims": 46620,
+          "benes": 6661,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 445800874.14,
+          "yoySpendChange": -0.1007
+        },
+        {
+          "brandName": "Humira",
+          "genericName": "Adalimumab",
+          "spendUsd": 208905154.75,
+          "claims": 25521,
+          "benes": 3912,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 257644313.48,
+          "yoySpendChange": -0.1892
+        },
+        {
+          "brandName": "Humira(Cf) Pen Crohn'S-Uc-Hs",
+          "genericName": "Adalimumab",
+          "spendUsd": 59215904.35,
+          "claims": 2890,
+          "benes": 2792,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 70488871.15,
+          "yoySpendChange": -0.1599
+        },
+        {
+          "brandName": "Humira(Cf) Pen Psor-Uv-Adol Hs",
+          "genericName": "Adalimumab",
+          "spendUsd": 20737458.22,
+          "claims": 1527,
+          "benes": 1497,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 24706945.56,
+          "yoySpendChange": -0.1607
+        }
+      ]
+    },
+    "ustekinumab": {
+      "familyId": "ustekinumab",
+      "ingredient": "ustekinumab",
+      "referenceBrandHint": "Stelara*",
+      "totalSpendUsd": 3378017374.1,
+      "totalClaims": 132865,
+      "totalBenes": 24754,
+      "priorYearSpendUsd": 2987778599.9,
+      "yoySpendChange": 0.1306,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Stelara*",
+          "genericName": "Ustekinumab",
+          "spendUsd": 3378017374.1,
+          "claims": 132865,
+          "benes": 24754,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 2987778599.9,
+          "yoySpendChange": 0.1306
+        }
+      ]
+    },
+    "etanercept": {
+      "familyId": "etanercept",
+      "ingredient": "etanercept",
+      "referenceBrandHint": "Enbrel Sureclick",
+      "totalSpendUsd": 3225567875.91,
+      "totalClaims": 409277,
+      "totalBenes": 53261,
+      "priorYearSpendUsd": 2951284786.29,
+      "yoySpendChange": 0.0929,
+      "brandCount": 3,
+      "brands": [
+        {
+          "brandName": "Enbrel Sureclick",
+          "genericName": "Etanercept",
+          "spendUsd": 2337152869.1,
+          "claims": 296022,
+          "benes": 38591,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 2054858498.8,
+          "yoySpendChange": 0.1374
+        },
+        {
+          "brandName": "Enbrel",
+          "genericName": "Etanercept",
+          "spendUsd": 632791430.87,
+          "claims": 80845,
+          "benes": 10542,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 627419986.53,
+          "yoySpendChange": 0.0086
+        },
+        {
+          "brandName": "Enbrel Mini",
+          "genericName": "Etanercept",
+          "spendUsd": 255623575.94,
+          "claims": 32410,
+          "benes": 4128,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 269006300.96,
+          "yoySpendChange": -0.0497
+        }
+      ]
+    },
+    "insulin_glargine": {
+      "familyId": "insulin_glargine",
+      "ingredient": "insulin glargine",
+      "referenceBrandHint": "Lantus Solostar",
+      "totalSpendUsd": 2727324224.26,
+      "totalClaims": 10395074,
+      "totalBenes": 2703080,
+      "priorYearSpendUsd": 5658082151.37,
+      "yoySpendChange": -0.518,
+      "brandCount": 13,
+      "brands": [
+        {
+          "brandName": "Lantus Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 699132485.95,
+          "claims": 5570732,
+          "benes": 1415422,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 3157233281.8,
+          "yoySpendChange": -0.7786
+        },
+        {
+          "brandName": "Basaglar Kwikpen U-100",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 664629407.56,
+          "claims": 1777659,
+          "benes": 422745,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 647548318.52,
+          "yoySpendChange": 0.0264
+        },
+        {
+          "brandName": "Toujeo Max Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 561185695.39,
+          "claims": 514108,
+          "benes": 134394,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 488777502.04,
+          "yoySpendChange": 0.1481
+        },
+        {
+          "brandName": "Toujeo Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 549974618.58,
+          "claims": 762959,
+          "benes": 189494,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 541871907.75,
+          "yoySpendChange": 0.015
+        },
+        {
+          "brandName": "Lantus",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 139894057.11,
+          "claims": 1116800,
+          "benes": 271761,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 735735411.45,
+          "yoySpendChange": -0.8099
+        },
+        {
+          "brandName": "Semglee (Yfgn) Pen",
+          "genericName": "Insulin Glargine-Yfgn",
+          "spendUsd": 58559541.62,
+          "claims": 134230,
+          "benes": 51446,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 27019466.59,
+          "yoySpendChange": 1.1673
+        },
+        {
+          "brandName": "Insulin Glargine-Yfgn",
+          "genericName": "Insulin Glargine-Yfgn",
+          "spendUsd": 36336005.64,
+          "claims": 437614,
+          "benes": 171950,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 32270211.81,
+          "yoySpendChange": 0.126
+        },
+        {
+          "brandName": "Semglee (Yfgn)",
+          "genericName": "Insulin Glargine-Yfgn",
+          "spendUsd": 6730750.46,
+          "claims": 14552,
+          "benes": 5264,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 3992193.75,
+          "yoySpendChange": 0.686
+        },
+        {
+          "brandName": "Insulin Glargine Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 5333732.72,
+          "claims": 34198,
+          "benes": 23129,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 15800801.87,
+          "yoySpendChange": -0.6624
+        },
+        {
+          "brandName": "Insulin Glargine",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 2703443.64,
+          "claims": 18156,
+          "benes": 10711,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 7523782.18,
+          "yoySpendChange": -0.6407
+        },
+        {
+          "brandName": "Insulin Glargine Max Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 1677659.78,
+          "claims": 5677,
+          "benes": 3366,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": null,
+          "yoySpendChange": null
+        },
+        {
+          "brandName": "Rezvoglar Kwikpen",
+          "genericName": "Insulin Glargine-Aglr",
+          "spendUsd": 585935.46,
+          "claims": 6554,
+          "benes": 2344,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 66744.62,
+          "yoySpendChange": 7.7788
+        },
+        {
+          "brandName": "Basaglar Tempo Pen U-100",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 580890.35,
+          "claims": 1835,
+          "benes": 1054,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 242528.99,
+          "yoySpendChange": 1.3951
+        }
+      ]
+    },
+    "insulin_lispro": {
+      "familyId": "insulin_lispro",
+      "ingredient": "insulin lispro",
+      "referenceBrandHint": "Humalog Kwikpen U-100",
+      "totalSpendUsd": 971362231.47,
+      "totalClaims": 3538345,
+      "totalBenes": 1141198,
+      "priorYearSpendUsd": 2121950636.52,
+      "yoySpendChange": -0.5422,
+      "brandCount": 14,
+      "brands": [
+        {
+          "brandName": "Humalog Kwikpen U-100",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 334334171.91,
+          "claims": 1392033,
+          "benes": 447128,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1208385334.2,
+          "yoySpendChange": -0.7233
+        },
+        {
+          "brandName": "Humalog Kwikpen U-200",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 228025262.24,
+          "claims": 159898,
+          "benes": 45830,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 224440403.63,
+          "yoySpendChange": 0.016
+        },
+        {
+          "brandName": "Insulin Lispro Kwikpen U-100",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 154432906.32,
+          "claims": 847641,
+          "benes": 283488,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 129467810.64,
+          "yoySpendChange": 0.1928
+        },
+        {
+          "brandName": "Humalog",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 98416546.93,
+          "claims": 511120,
+          "benes": 149275,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 458058581.84,
+          "yoySpendChange": -0.7851
+        },
+        {
+          "brandName": "Lyumjev Kwikpen U-100",
+          "genericName": "Insulin Lispro-Aabc",
+          "spendUsd": 56023532.0,
+          "claims": 73122,
+          "benes": 22655,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 37737191.51,
+          "yoySpendChange": 0.4846
+        },
+        {
+          "brandName": "Admelog Solostar",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 33991383.24,
+          "claims": 152025,
+          "benes": 50864,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 4074926.77,
+          "yoySpendChange": 7.3416
+        },
+        {
+          "brandName": "Lyumjev",
+          "genericName": "Insulin Lispro-Aabc",
+          "spendUsd": 19927367.68,
+          "claims": 17978,
+          "benes": 5449,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 14719968.54,
+          "yoySpendChange": 0.3538
+        },
+        {
+          "brandName": "Insulin Lispro",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 17494054.85,
+          "claims": 300584,
+          "benes": 106242,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 22146360.77,
+          "yoySpendChange": -0.2101
+        },
+        {
+          "brandName": "Lyumjev Kwikpen U-200",
+          "genericName": "Insulin Lispro-Aabc",
+          "spendUsd": 13672689.08,
+          "claims": 8403,
+          "benes": 2432,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 9887086.81,
+          "yoySpendChange": 0.3829
+        },
+        {
+          "brandName": "Admelog",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 9842389.84,
+          "claims": 46508,
+          "benes": 16113,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1393723.53,
+          "yoySpendChange": 6.0619
+        },
+        {
+          "brandName": "Humalog Junior Kwikpen",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 3063716.31,
+          "claims": 17083,
+          "benes": 6564,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 9905950.02,
+          "yoySpendChange": -0.6907
+        },
+        {
+          "brandName": "Insulin Lispro Junior Kwikpen",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 1570983.86,
+          "claims": 10234,
+          "benes": 4333,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1214062.61,
+          "yoySpendChange": 0.294
+        },
+        {
+          "brandName": "Lyumjev Tempo Pen U-100",
+          "genericName": "Insulin Lispro-Aabc",
+          "spendUsd": 341963.96,
+          "claims": 407,
+          "benes": 211,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 322751.59,
+          "yoySpendChange": 0.0595
+        },
+        {
+          "brandName": "Humalog Tempo Pen U-100",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 225263.25,
+          "claims": 1309,
+          "benes": 614,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 196484.06,
+          "yoySpendChange": 0.1465
+        }
+      ]
+    },
+    "denosumab": {
+      "familyId": "denosumab",
+      "ingredient": "denosumab",
+      "referenceBrandHint": "Prolia",
+      "totalSpendUsd": 827665924.3,
+      "totalClaims": 468512,
+      "totalBenes": 288460,
+      "priorYearSpendUsd": 719596059.52,
+      "yoySpendChange": 0.1502,
+      "brandCount": 2,
+      "brands": [
+        {
+          "brandName": "Prolia",
+          "genericName": "Denosumab",
+          "spendUsd": 771837558.17,
+          "claims": 450858,
+          "benes": 284965,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 673286886.73,
+          "yoySpendChange": 0.1464
+        },
+        {
+          "brandName": "Xgeva",
+          "genericName": "Denosumab",
+          "spendUsd": 55828366.13,
+          "claims": 17654,
+          "benes": 3495,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 46309172.79,
+          "yoySpendChange": 0.2056
+        }
+      ]
+    },
+    "insulin_aspart": {
+      "familyId": "insulin_aspart",
+      "ingredient": "insulin aspart",
+      "referenceBrandHint": "Novolog Flexpen",
+      "totalSpendUsd": 821284416.78,
+      "totalClaims": 2729041,
+      "totalBenes": 910523,
+      "priorYearSpendUsd": 2612333201.67,
+      "yoySpendChange": -0.6856,
+      "brandCount": 9,
+      "brands": [
+        {
+          "brandName": "Novolog Flexpen",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 318913548.94,
+          "claims": 1483591,
+          "benes": 479549,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1875605626.8,
+          "yoySpendChange": -0.83
+        },
+        {
+          "brandName": "Fiasp Flextouch",
+          "genericName": "Insulin Aspart (Niacinamide)",
+          "spendUsd": 289492211.15,
+          "claims": 398663,
+          "benes": 131189,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 105895816.71,
+          "yoySpendChange": 1.7337
+        },
+        {
+          "brandName": "Novolog",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 85508606.31,
+          "claims": 370385,
+          "benes": 111329,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 518394273.45,
+          "yoySpendChange": -0.8351
+        },
+        {
+          "brandName": "Fiasp",
+          "genericName": "Insulin Aspart (Niacinamide)",
+          "spendUsd": 64072644.11,
+          "claims": 83323,
+          "benes": 26825,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 23960285.62,
+          "yoySpendChange": 1.6741
+        },
+        {
+          "brandName": "Insulin Aspart Flexpen",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 44651163.48,
+          "claims": 304586,
+          "benes": 122807,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 56416317.28,
+          "yoySpendChange": -0.2085
+        },
+        {
+          "brandName": "Insulin Aspart",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 11163417.95,
+          "claims": 71602,
+          "benes": 31703,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 16847559.65,
+          "yoySpendChange": -0.3374
+        },
+        {
+          "brandName": "Fiasp Penfill",
+          "genericName": "Insulin Aspart (Niacinamide)",
+          "spendUsd": 4929500.27,
+          "claims": 5790,
+          "benes": 2286,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1637026.9,
+          "yoySpendChange": 2.0113
+        },
+        {
+          "brandName": "Novolog Penfill",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 2231023.91,
+          "claims": 9358,
+          "benes": 3863,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 13098433.56,
+          "yoySpendChange": -0.8297
+        },
+        {
+          "brandName": "Insulin Aspart Penfill",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 322300.66,
+          "claims": 1743,
+          "benes": 972,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 477861.7,
+          "yoySpendChange": -0.3255
+        }
+      ]
+    },
+    "epoetin": {
+      "familyId": "epoetin",
+      "ingredient": "epoetin",
+      "referenceBrandHint": "Procrit",
+      "totalSpendUsd": 192746788.54,
+      "totalClaims": 170740,
+      "totalBenes": 42209,
+      "priorYearSpendUsd": 195308663.01,
+      "yoySpendChange": -0.0131,
+      "brandCount": 3,
+      "brands": [
+        {
+          "brandName": "Procrit",
+          "genericName": "Epoetin Alfa",
+          "spendUsd": 157494281.06,
+          "claims": 106585,
+          "benes": 24690,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 163098995.18,
+          "yoySpendChange": -0.0344
+        },
+        {
+          "brandName": "Retacrit",
+          "genericName": "Epoetin Alfa-Epbx",
+          "spendUsd": 27125959.02,
+          "claims": 47809,
+          "benes": 13155,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 24529470.53,
+          "yoySpendChange": 0.1059
+        },
+        {
+          "brandName": "Epogen",
+          "genericName": "Epoetin Alfa",
+          "spendUsd": 8126548.46,
+          "claims": 16346,
+          "benes": 4364,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 7680197.3,
+          "yoySpendChange": 0.0581
+        }
+      ]
+    },
+    "infliximab": {
+      "familyId": "infliximab",
+      "ingredient": "infliximab",
+      "referenceBrandHint": "Remicade",
+      "totalSpendUsd": 122409873.92,
+      "totalClaims": 19002,
+      "totalBenes": 3580,
+      "priorYearSpendUsd": 114471010.72,
+      "yoySpendChange": 0.0694,
+      "brandCount": 2,
+      "brands": [
+        {
+          "brandName": "Remicade",
+          "genericName": "Infliximab",
+          "spendUsd": 118798517.13,
+          "claims": 17640,
+          "benes": 3243,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 111268848.97,
+          "yoySpendChange": 0.0677
+        },
+        {
+          "brandName": "Infliximab",
+          "genericName": "Infliximab",
+          "spendUsd": 3611356.79,
+          "claims": 1362,
+          "benes": 337,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 3202161.75,
+          "yoySpendChange": 0.1278
+        }
+      ]
+    },
+    "pegfilgrastim": {
+      "familyId": "pegfilgrastim",
+      "ingredient": "pegfilgrastim",
+      "referenceBrandHint": "Neulasta",
+      "totalSpendUsd": 96273920.24,
+      "totalClaims": 13888,
+      "totalBenes": 4336,
+      "priorYearSpendUsd": 82302912.09,
+      "yoySpendChange": 0.1698,
+      "brandCount": 2,
+      "brands": [
+        {
+          "brandName": "Neulasta",
+          "genericName": "PEGfilgrastim",
+          "spendUsd": 53122083.24,
+          "claims": 7279,
+          "benes": 2421,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 41507763.2,
+          "yoySpendChange": 0.2798
+        },
+        {
+          "brandName": "Neulasta Onpro",
+          "genericName": "PEGfilgrastim",
+          "spendUsd": 43151837.0,
+          "claims": 6609,
+          "benes": 1915,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 40795148.89,
+          "yoySpendChange": 0.0578
+        }
+      ]
+    },
+    "darbepoetin": {
+      "familyId": "darbepoetin",
+      "ingredient": "darbepoetin",
+      "referenceBrandHint": "Aranesp",
+      "totalSpendUsd": 62541381.42,
+      "totalClaims": 27006,
+      "totalBenes": 6472,
+      "priorYearSpendUsd": 59909953.16,
+      "yoySpendChange": 0.0439,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Aranesp",
+          "genericName": "Darbepoetin Alfa In Polysorbat",
+          "spendUsd": 62541381.42,
+          "claims": 27006,
+          "benes": 6472,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 59909953.16,
+          "yoySpendChange": 0.0439
+        }
+      ]
+    },
+    "rituximab": {
+      "familyId": "rituximab",
+      "ingredient": "rituximab",
+      "referenceBrandHint": "Rituxan",
+      "totalSpendUsd": 38719960.43,
+      "totalClaims": 3244,
+      "totalBenes": 1499,
+      "priorYearSpendUsd": 39322013.55,
+      "yoySpendChange": -0.0153,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Rituxan",
+          "genericName": "Rituximab",
+          "spendUsd": 38719960.43,
+          "claims": 3244,
+          "benes": 1499,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 39322013.55,
+          "yoySpendChange": -0.0153
+        }
+      ]
+    },
+    "filgrastim": {
+      "familyId": "filgrastim",
+      "ingredient": "filgrastim",
+      "referenceBrandHint": "Neupogen",
+      "totalSpendUsd": 11661169.94,
+      "totalClaims": 8128,
+      "totalBenes": 3088,
+      "priorYearSpendUsd": 11989894.21,
+      "yoySpendChange": -0.0274,
+      "brandCount": 2,
+      "brands": [
+        {
+          "brandName": "Neupogen",
+          "genericName": "Filgrastim",
+          "spendUsd": 7208750.46,
+          "claims": 2908,
+          "benes": 1038,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 9654765.04,
+          "yoySpendChange": -0.2533
+        },
+        {
+          "brandName": "Granix",
+          "genericName": "Tbo-Filgrastim",
+          "spendUsd": 4452419.48,
+          "claims": 5220,
+          "benes": 2050,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 2335129.17,
+          "yoySpendChange": 0.9067
+        }
+      ]
+    },
+    "bevacizumab": {
+      "familyId": "bevacizumab",
+      "ingredient": "bevacizumab",
+      "referenceBrandHint": "Avastin",
+      "totalSpendUsd": 9033009.17,
+      "totalClaims": 1712,
+      "totalBenes": 335,
+      "priorYearSpendUsd": 11937711.54,
+      "yoySpendChange": -0.2433,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Avastin",
+          "genericName": "Bevacizumab",
+          "spendUsd": 9033009.17,
+          "claims": 1712,
+          "benes": 335,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 11937711.54,
+          "yoySpendChange": -0.2433
+        }
+      ]
+    },
+    "trastuzumab": {
+      "familyId": "trastuzumab",
+      "ingredient": "trastuzumab",
+      "referenceBrandHint": "Herceptin",
+      "totalSpendUsd": 4692925.16,
+      "totalClaims": 919,
+      "totalBenes": 122,
+      "priorYearSpendUsd": 4383515.3,
+      "yoySpendChange": 0.0706,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Herceptin",
+          "genericName": "Trastuzumab",
+          "spendUsd": 4692925.16,
+          "claims": 919,
+          "benes": 122,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 4383515.3,
+          "yoySpendChange": 0.0706
+        }
+      ]
+    },
+    "ranibizumab": {
+      "familyId": "ranibizumab",
+      "ingredient": "ranibizumab",
+      "referenceBrandHint": "Lucentis",
+      "totalSpendUsd": 2630670.6,
+      "totalClaims": 1203,
+      "totalBenes": 332,
+      "priorYearSpendUsd": 3838735.71,
+      "yoySpendChange": -0.3147,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Lucentis",
+          "genericName": "Ranibizumab",
+          "spendUsd": 2630670.6,
+          "claims": 1203,
+          "benes": 332,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 3838735.71,
+          "yoySpendChange": -0.3147
+        }
+      ]
+    }
+  },
+  "familyList": [
+    {
+      "familyId": "adalimumab",
+      "ingredient": "adalimumab",
+      "referenceBrandHint": "Humira(Cf) Pen",
+      "totalSpendUsd": 5715863099.68,
+      "totalClaims": 652028,
+      "totalBenes": 90349,
+      "priorYearSpendUsd": 6053631248.22,
+      "yoySpendChange": -0.0558,
+      "brandCount": 6,
+      "brands": [
+        {
+          "brandName": "Humira(Cf) Pen",
+          "genericName": "Adalimumab",
+          "spendUsd": 4328698864.2,
+          "claims": 490303,
+          "benes": 63768,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 4419828188.3,
+          "yoySpendChange": -0.0206
+        },
+        {
+          "brandName": "Humira Pen",
+          "genericName": "Adalimumab",
+          "spendUsd": 697405207.41,
+          "claims": 85167,
+          "benes": 11719,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 835162055.59,
+          "yoySpendChange": -0.1649
+        },
+        {
+          "brandName": "Humira(Cf)",
+          "genericName": "Adalimumab",
+          "spendUsd": 400900510.75,
+          "claims": 46620,
+          "benes": 6661,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 445800874.14,
+          "yoySpendChange": -0.1007
+        },
+        {
+          "brandName": "Humira",
+          "genericName": "Adalimumab",
+          "spendUsd": 208905154.75,
+          "claims": 25521,
+          "benes": 3912,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 257644313.48,
+          "yoySpendChange": -0.1892
+        },
+        {
+          "brandName": "Humira(Cf) Pen Crohn'S-Uc-Hs",
+          "genericName": "Adalimumab",
+          "spendUsd": 59215904.35,
+          "claims": 2890,
+          "benes": 2792,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 70488871.15,
+          "yoySpendChange": -0.1599
+        },
+        {
+          "brandName": "Humira(Cf) Pen Psor-Uv-Adol Hs",
+          "genericName": "Adalimumab",
+          "spendUsd": 20737458.22,
+          "claims": 1527,
+          "benes": 1497,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 24706945.56,
+          "yoySpendChange": -0.1607
+        }
+      ]
+    },
+    {
+      "familyId": "ustekinumab",
+      "ingredient": "ustekinumab",
+      "referenceBrandHint": "Stelara*",
+      "totalSpendUsd": 3378017374.1,
+      "totalClaims": 132865,
+      "totalBenes": 24754,
+      "priorYearSpendUsd": 2987778599.9,
+      "yoySpendChange": 0.1306,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Stelara*",
+          "genericName": "Ustekinumab",
+          "spendUsd": 3378017374.1,
+          "claims": 132865,
+          "benes": 24754,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 2987778599.9,
+          "yoySpendChange": 0.1306
+        }
+      ]
+    },
+    {
+      "familyId": "etanercept",
+      "ingredient": "etanercept",
+      "referenceBrandHint": "Enbrel Sureclick",
+      "totalSpendUsd": 3225567875.91,
+      "totalClaims": 409277,
+      "totalBenes": 53261,
+      "priorYearSpendUsd": 2951284786.29,
+      "yoySpendChange": 0.0929,
+      "brandCount": 3,
+      "brands": [
+        {
+          "brandName": "Enbrel Sureclick",
+          "genericName": "Etanercept",
+          "spendUsd": 2337152869.1,
+          "claims": 296022,
+          "benes": 38591,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 2054858498.8,
+          "yoySpendChange": 0.1374
+        },
+        {
+          "brandName": "Enbrel",
+          "genericName": "Etanercept",
+          "spendUsd": 632791430.87,
+          "claims": 80845,
+          "benes": 10542,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 627419986.53,
+          "yoySpendChange": 0.0086
+        },
+        {
+          "brandName": "Enbrel Mini",
+          "genericName": "Etanercept",
+          "spendUsd": 255623575.94,
+          "claims": 32410,
+          "benes": 4128,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 269006300.96,
+          "yoySpendChange": -0.0497
+        }
+      ]
+    },
+    {
+      "familyId": "insulin_glargine",
+      "ingredient": "insulin glargine",
+      "referenceBrandHint": "Lantus Solostar",
+      "totalSpendUsd": 2727324224.26,
+      "totalClaims": 10395074,
+      "totalBenes": 2703080,
+      "priorYearSpendUsd": 5658082151.37,
+      "yoySpendChange": -0.518,
+      "brandCount": 13,
+      "brands": [
+        {
+          "brandName": "Lantus Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 699132485.95,
+          "claims": 5570732,
+          "benes": 1415422,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 3157233281.8,
+          "yoySpendChange": -0.7786
+        },
+        {
+          "brandName": "Basaglar Kwikpen U-100",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 664629407.56,
+          "claims": 1777659,
+          "benes": 422745,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 647548318.52,
+          "yoySpendChange": 0.0264
+        },
+        {
+          "brandName": "Toujeo Max Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 561185695.39,
+          "claims": 514108,
+          "benes": 134394,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 488777502.04,
+          "yoySpendChange": 0.1481
+        },
+        {
+          "brandName": "Toujeo Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 549974618.58,
+          "claims": 762959,
+          "benes": 189494,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 541871907.75,
+          "yoySpendChange": 0.015
+        },
+        {
+          "brandName": "Lantus",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 139894057.11,
+          "claims": 1116800,
+          "benes": 271761,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 735735411.45,
+          "yoySpendChange": -0.8099
+        },
+        {
+          "brandName": "Semglee (Yfgn) Pen",
+          "genericName": "Insulin Glargine-Yfgn",
+          "spendUsd": 58559541.62,
+          "claims": 134230,
+          "benes": 51446,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 27019466.59,
+          "yoySpendChange": 1.1673
+        },
+        {
+          "brandName": "Insulin Glargine-Yfgn",
+          "genericName": "Insulin Glargine-Yfgn",
+          "spendUsd": 36336005.64,
+          "claims": 437614,
+          "benes": 171950,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 32270211.81,
+          "yoySpendChange": 0.126
+        },
+        {
+          "brandName": "Semglee (Yfgn)",
+          "genericName": "Insulin Glargine-Yfgn",
+          "spendUsd": 6730750.46,
+          "claims": 14552,
+          "benes": 5264,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 3992193.75,
+          "yoySpendChange": 0.686
+        },
+        {
+          "brandName": "Insulin Glargine Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 5333732.72,
+          "claims": 34198,
+          "benes": 23129,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 15800801.87,
+          "yoySpendChange": -0.6624
+        },
+        {
+          "brandName": "Insulin Glargine",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 2703443.64,
+          "claims": 18156,
+          "benes": 10711,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 7523782.18,
+          "yoySpendChange": -0.6407
+        },
+        {
+          "brandName": "Insulin Glargine Max Solostar",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 1677659.78,
+          "claims": 5677,
+          "benes": 3366,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": null,
+          "yoySpendChange": null
+        },
+        {
+          "brandName": "Rezvoglar Kwikpen",
+          "genericName": "Insulin Glargine-Aglr",
+          "spendUsd": 585935.46,
+          "claims": 6554,
+          "benes": 2344,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 66744.62,
+          "yoySpendChange": 7.7788
+        },
+        {
+          "brandName": "Basaglar Tempo Pen U-100",
+          "genericName": "Insulin Glargine,Hum.Rec.Anlog",
+          "spendUsd": 580890.35,
+          "claims": 1835,
+          "benes": 1054,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 242528.99,
+          "yoySpendChange": 1.3951
+        }
+      ]
+    },
+    {
+      "familyId": "insulin_lispro",
+      "ingredient": "insulin lispro",
+      "referenceBrandHint": "Humalog Kwikpen U-100",
+      "totalSpendUsd": 971362231.47,
+      "totalClaims": 3538345,
+      "totalBenes": 1141198,
+      "priorYearSpendUsd": 2121950636.52,
+      "yoySpendChange": -0.5422,
+      "brandCount": 14,
+      "brands": [
+        {
+          "brandName": "Humalog Kwikpen U-100",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 334334171.91,
+          "claims": 1392033,
+          "benes": 447128,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1208385334.2,
+          "yoySpendChange": -0.7233
+        },
+        {
+          "brandName": "Humalog Kwikpen U-200",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 228025262.24,
+          "claims": 159898,
+          "benes": 45830,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 224440403.63,
+          "yoySpendChange": 0.016
+        },
+        {
+          "brandName": "Insulin Lispro Kwikpen U-100",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 154432906.32,
+          "claims": 847641,
+          "benes": 283488,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 129467810.64,
+          "yoySpendChange": 0.1928
+        },
+        {
+          "brandName": "Humalog",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 98416546.93,
+          "claims": 511120,
+          "benes": 149275,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 458058581.84,
+          "yoySpendChange": -0.7851
+        },
+        {
+          "brandName": "Lyumjev Kwikpen U-100",
+          "genericName": "Insulin Lispro-Aabc",
+          "spendUsd": 56023532.0,
+          "claims": 73122,
+          "benes": 22655,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 37737191.51,
+          "yoySpendChange": 0.4846
+        },
+        {
+          "brandName": "Admelog Solostar",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 33991383.24,
+          "claims": 152025,
+          "benes": 50864,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 4074926.77,
+          "yoySpendChange": 7.3416
+        },
+        {
+          "brandName": "Lyumjev",
+          "genericName": "Insulin Lispro-Aabc",
+          "spendUsd": 19927367.68,
+          "claims": 17978,
+          "benes": 5449,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 14719968.54,
+          "yoySpendChange": 0.3538
+        },
+        {
+          "brandName": "Insulin Lispro",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 17494054.85,
+          "claims": 300584,
+          "benes": 106242,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 22146360.77,
+          "yoySpendChange": -0.2101
+        },
+        {
+          "brandName": "Lyumjev Kwikpen U-200",
+          "genericName": "Insulin Lispro-Aabc",
+          "spendUsd": 13672689.08,
+          "claims": 8403,
+          "benes": 2432,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 9887086.81,
+          "yoySpendChange": 0.3829
+        },
+        {
+          "brandName": "Admelog",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 9842389.84,
+          "claims": 46508,
+          "benes": 16113,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1393723.53,
+          "yoySpendChange": 6.0619
+        },
+        {
+          "brandName": "Humalog Junior Kwikpen",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 3063716.31,
+          "claims": 17083,
+          "benes": 6564,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 9905950.02,
+          "yoySpendChange": -0.6907
+        },
+        {
+          "brandName": "Insulin Lispro Junior Kwikpen",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 1570983.86,
+          "claims": 10234,
+          "benes": 4333,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1214062.61,
+          "yoySpendChange": 0.294
+        },
+        {
+          "brandName": "Lyumjev Tempo Pen U-100",
+          "genericName": "Insulin Lispro-Aabc",
+          "spendUsd": 341963.96,
+          "claims": 407,
+          "benes": 211,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 322751.59,
+          "yoySpendChange": 0.0595
+        },
+        {
+          "brandName": "Humalog Tempo Pen U-100",
+          "genericName": "Insulin Lispro",
+          "spendUsd": 225263.25,
+          "claims": 1309,
+          "benes": 614,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 196484.06,
+          "yoySpendChange": 0.1465
+        }
+      ]
+    },
+    {
+      "familyId": "denosumab",
+      "ingredient": "denosumab",
+      "referenceBrandHint": "Prolia",
+      "totalSpendUsd": 827665924.3,
+      "totalClaims": 468512,
+      "totalBenes": 288460,
+      "priorYearSpendUsd": 719596059.52,
+      "yoySpendChange": 0.1502,
+      "brandCount": 2,
+      "brands": [
+        {
+          "brandName": "Prolia",
+          "genericName": "Denosumab",
+          "spendUsd": 771837558.17,
+          "claims": 450858,
+          "benes": 284965,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 673286886.73,
+          "yoySpendChange": 0.1464
+        },
+        {
+          "brandName": "Xgeva",
+          "genericName": "Denosumab",
+          "spendUsd": 55828366.13,
+          "claims": 17654,
+          "benes": 3495,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 46309172.79,
+          "yoySpendChange": 0.2056
+        }
+      ]
+    },
+    {
+      "familyId": "insulin_aspart",
+      "ingredient": "insulin aspart",
+      "referenceBrandHint": "Novolog Flexpen",
+      "totalSpendUsd": 821284416.78,
+      "totalClaims": 2729041,
+      "totalBenes": 910523,
+      "priorYearSpendUsd": 2612333201.67,
+      "yoySpendChange": -0.6856,
+      "brandCount": 9,
+      "brands": [
+        {
+          "brandName": "Novolog Flexpen",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 318913548.94,
+          "claims": 1483591,
+          "benes": 479549,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1875605626.8,
+          "yoySpendChange": -0.83
+        },
+        {
+          "brandName": "Fiasp Flextouch",
+          "genericName": "Insulin Aspart (Niacinamide)",
+          "spendUsd": 289492211.15,
+          "claims": 398663,
+          "benes": 131189,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 105895816.71,
+          "yoySpendChange": 1.7337
+        },
+        {
+          "brandName": "Novolog",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 85508606.31,
+          "claims": 370385,
+          "benes": 111329,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 518394273.45,
+          "yoySpendChange": -0.8351
+        },
+        {
+          "brandName": "Fiasp",
+          "genericName": "Insulin Aspart (Niacinamide)",
+          "spendUsd": 64072644.11,
+          "claims": 83323,
+          "benes": 26825,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 23960285.62,
+          "yoySpendChange": 1.6741
+        },
+        {
+          "brandName": "Insulin Aspart Flexpen",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 44651163.48,
+          "claims": 304586,
+          "benes": 122807,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 56416317.28,
+          "yoySpendChange": -0.2085
+        },
+        {
+          "brandName": "Insulin Aspart",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 11163417.95,
+          "claims": 71602,
+          "benes": 31703,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 16847559.65,
+          "yoySpendChange": -0.3374
+        },
+        {
+          "brandName": "Fiasp Penfill",
+          "genericName": "Insulin Aspart (Niacinamide)",
+          "spendUsd": 4929500.27,
+          "claims": 5790,
+          "benes": 2286,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 1637026.9,
+          "yoySpendChange": 2.0113
+        },
+        {
+          "brandName": "Novolog Penfill",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 2231023.91,
+          "claims": 9358,
+          "benes": 3863,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 13098433.56,
+          "yoySpendChange": -0.8297
+        },
+        {
+          "brandName": "Insulin Aspart Penfill",
+          "genericName": "Insulin Aspart",
+          "spendUsd": 322300.66,
+          "claims": 1743,
+          "benes": 972,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 477861.7,
+          "yoySpendChange": -0.3255
+        }
+      ]
+    },
+    {
+      "familyId": "epoetin",
+      "ingredient": "epoetin",
+      "referenceBrandHint": "Procrit",
+      "totalSpendUsd": 192746788.54,
+      "totalClaims": 170740,
+      "totalBenes": 42209,
+      "priorYearSpendUsd": 195308663.01,
+      "yoySpendChange": -0.0131,
+      "brandCount": 3,
+      "brands": [
+        {
+          "brandName": "Procrit",
+          "genericName": "Epoetin Alfa",
+          "spendUsd": 157494281.06,
+          "claims": 106585,
+          "benes": 24690,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 163098995.18,
+          "yoySpendChange": -0.0344
+        },
+        {
+          "brandName": "Retacrit",
+          "genericName": "Epoetin Alfa-Epbx",
+          "spendUsd": 27125959.02,
+          "claims": 47809,
+          "benes": 13155,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 24529470.53,
+          "yoySpendChange": 0.1059
+        },
+        {
+          "brandName": "Epogen",
+          "genericName": "Epoetin Alfa",
+          "spendUsd": 8126548.46,
+          "claims": 16346,
+          "benes": 4364,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 7680197.3,
+          "yoySpendChange": 0.0581
+        }
+      ]
+    },
+    {
+      "familyId": "infliximab",
+      "ingredient": "infliximab",
+      "referenceBrandHint": "Remicade",
+      "totalSpendUsd": 122409873.92,
+      "totalClaims": 19002,
+      "totalBenes": 3580,
+      "priorYearSpendUsd": 114471010.72,
+      "yoySpendChange": 0.0694,
+      "brandCount": 2,
+      "brands": [
+        {
+          "brandName": "Remicade",
+          "genericName": "Infliximab",
+          "spendUsd": 118798517.13,
+          "claims": 17640,
+          "benes": 3243,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 111268848.97,
+          "yoySpendChange": 0.0677
+        },
+        {
+          "brandName": "Infliximab",
+          "genericName": "Infliximab",
+          "spendUsd": 3611356.79,
+          "claims": 1362,
+          "benes": 337,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 3202161.75,
+          "yoySpendChange": 0.1278
+        }
+      ]
+    },
+    {
+      "familyId": "pegfilgrastim",
+      "ingredient": "pegfilgrastim",
+      "referenceBrandHint": "Neulasta",
+      "totalSpendUsd": 96273920.24,
+      "totalClaims": 13888,
+      "totalBenes": 4336,
+      "priorYearSpendUsd": 82302912.09,
+      "yoySpendChange": 0.1698,
+      "brandCount": 2,
+      "brands": [
+        {
+          "brandName": "Neulasta",
+          "genericName": "PEGfilgrastim",
+          "spendUsd": 53122083.24,
+          "claims": 7279,
+          "benes": 2421,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 41507763.2,
+          "yoySpendChange": 0.2798
+        },
+        {
+          "brandName": "Neulasta Onpro",
+          "genericName": "PEGfilgrastim",
+          "spendUsd": 43151837.0,
+          "claims": 6609,
+          "benes": 1915,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 40795148.89,
+          "yoySpendChange": 0.0578
+        }
+      ]
+    },
+    {
+      "familyId": "darbepoetin",
+      "ingredient": "darbepoetin",
+      "referenceBrandHint": "Aranesp",
+      "totalSpendUsd": 62541381.42,
+      "totalClaims": 27006,
+      "totalBenes": 6472,
+      "priorYearSpendUsd": 59909953.16,
+      "yoySpendChange": 0.0439,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Aranesp",
+          "genericName": "Darbepoetin Alfa In Polysorbat",
+          "spendUsd": 62541381.42,
+          "claims": 27006,
+          "benes": 6472,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 59909953.16,
+          "yoySpendChange": 0.0439
+        }
+      ]
+    },
+    {
+      "familyId": "rituximab",
+      "ingredient": "rituximab",
+      "referenceBrandHint": "Rituxan",
+      "totalSpendUsd": 38719960.43,
+      "totalClaims": 3244,
+      "totalBenes": 1499,
+      "priorYearSpendUsd": 39322013.55,
+      "yoySpendChange": -0.0153,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Rituxan",
+          "genericName": "Rituximab",
+          "spendUsd": 38719960.43,
+          "claims": 3244,
+          "benes": 1499,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 39322013.55,
+          "yoySpendChange": -0.0153
+        }
+      ]
+    },
+    {
+      "familyId": "filgrastim",
+      "ingredient": "filgrastim",
+      "referenceBrandHint": "Neupogen",
+      "totalSpendUsd": 11661169.94,
+      "totalClaims": 8128,
+      "totalBenes": 3088,
+      "priorYearSpendUsd": 11989894.21,
+      "yoySpendChange": -0.0274,
+      "brandCount": 2,
+      "brands": [
+        {
+          "brandName": "Neupogen",
+          "genericName": "Filgrastim",
+          "spendUsd": 7208750.46,
+          "claims": 2908,
+          "benes": 1038,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 9654765.04,
+          "yoySpendChange": -0.2533
+        },
+        {
+          "brandName": "Granix",
+          "genericName": "Tbo-Filgrastim",
+          "spendUsd": 4452419.48,
+          "claims": 5220,
+          "benes": 2050,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 2335129.17,
+          "yoySpendChange": 0.9067
+        }
+      ]
+    },
+    {
+      "familyId": "bevacizumab",
+      "ingredient": "bevacizumab",
+      "referenceBrandHint": "Avastin",
+      "totalSpendUsd": 9033009.17,
+      "totalClaims": 1712,
+      "totalBenes": 335,
+      "priorYearSpendUsd": 11937711.54,
+      "yoySpendChange": -0.2433,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Avastin",
+          "genericName": "Bevacizumab",
+          "spendUsd": 9033009.17,
+          "claims": 1712,
+          "benes": 335,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 11937711.54,
+          "yoySpendChange": -0.2433
+        }
+      ]
+    },
+    {
+      "familyId": "trastuzumab",
+      "ingredient": "trastuzumab",
+      "referenceBrandHint": "Herceptin",
+      "totalSpendUsd": 4692925.16,
+      "totalClaims": 919,
+      "totalBenes": 122,
+      "priorYearSpendUsd": 4383515.3,
+      "yoySpendChange": 0.0706,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Herceptin",
+          "genericName": "Trastuzumab",
+          "spendUsd": 4692925.16,
+          "claims": 919,
+          "benes": 122,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 4383515.3,
+          "yoySpendChange": 0.0706
+        }
+      ]
+    },
+    {
+      "familyId": "ranibizumab",
+      "ingredient": "ranibizumab",
+      "referenceBrandHint": "Lucentis",
+      "totalSpendUsd": 2630670.6,
+      "totalClaims": 1203,
+      "totalBenes": 332,
+      "priorYearSpendUsd": 3838735.71,
+      "yoySpendChange": -0.3147,
+      "brandCount": 1,
+      "brands": [
+        {
+          "brandName": "Lucentis",
+          "genericName": "Ranibizumab",
+          "spendUsd": 2630670.6,
+          "claims": 1203,
+          "benes": 332,
+          "manufacturer": "Overall",
+          "priorYearSpendUsd": 3838735.71,
+          "yoySpendChange": -0.3147
+        }
+      ]
+    }
+  ]
+}

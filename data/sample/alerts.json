@@ -1,0 +1,77 @@
+{
+  "note": "Sample launch / conversion alerts. Illustrative only — not live FDA Purple Book feeds.",
+  "alerts": [
+    {
+      "id": "a1",
+      "type": "launch",
+      "severity": "high",
+      "title": "New ustekinumab biosimilar wave vs Stelara",
+      "familyId": "ustekinumab",
+      "brand": "Stelara",
+      "biosimilars": ["Wezlana", "Selarsdi", "Pyzchiva", "Yesintek"],
+      "message": "Multiple ustekinumab biosimilars are on market. Sample seed shows elevated brand share among dermatology and GI cohorts in TX, FL, and CA — conversion opportunity for preferred-product steering.",
+      "estBrandSpendUsd": 2800000000,
+      "publishedAt": "2025-11-12"
+    },
+    {
+      "id": "a2",
+      "type": "launch",
+      "severity": "high",
+      "title": "Interchangeable adalimumab (Cyltezo) underutilized",
+      "familyId": "adalimumab",
+      "brand": "Humira",
+      "biosimilars": ["Cyltezo", "Amjevita", "Hadlima", "Hyrimoz"],
+      "message": "Cyltezo carries interchangeable designation. Peer-group biosimilar share remains low in several rheumatology territories in the sample set.",
+      "estBrandSpendUsd": 4200000000,
+      "publishedAt": "2025-09-03"
+    },
+    {
+      "id": "a3",
+      "type": "conversion",
+      "severity": "medium",
+      "title": "Insulin glargine: Semglee / Rezvoglar gap",
+      "familyId": "insulin_glargine",
+      "brand": "Lantus",
+      "biosimilars": ["Semglee", "Rezvoglar", "Basaglar"],
+      "message": "Interchangeable glargine products exist; sample endocrinology and primary-care NPIs still skew to reference brand cost.",
+      "estBrandSpendUsd": 3100000000,
+      "publishedAt": "2026-01-20"
+    },
+    {
+      "id": "a4",
+      "type": "launch",
+      "severity": "medium",
+      "title": "Ranibizumab interchangeable (Cimerli) vs Lucentis",
+      "familyId": "ranibizumab",
+      "brand": "Lucentis",
+      "biosimilars": ["Cimerli", "Byooviz"],
+      "message": "Ophthalmology sample panels show brand-heavy mix; formulary preferred biosimilar adoption is incomplete in NY and FL cohorts.",
+      "estBrandSpendUsd": 900000000,
+      "publishedAt": "2025-06-18"
+    },
+    {
+      "id": "a5",
+      "type": "conversion",
+      "severity": "medium",
+      "title": "Pegfilgrastim brand persistence in oncology",
+      "familyId": "pegfilgrastim",
+      "brand": "Neulasta",
+      "biosimilars": ["Fulphila", "Udenyca", "Ziextenzo", "Nyvepria"],
+      "message": "Mature biosimilar class; sample medical oncology NPIs still drive material brand cost — classic PBM conversion target.",
+      "estBrandSpendUsd": 650000000,
+      "publishedAt": "2026-02-04"
+    },
+    {
+      "id": "a6",
+      "type": "conversion",
+      "severity": "low",
+      "title": "Filgrastim: Zarxio / Nivestym share lag",
+      "familyId": "filgrastim",
+      "brand": "Neupogen",
+      "biosimilars": ["Zarxio", "Nivestym", "Releuko"],
+      "message": "Lower absolute spend than other families, but high conversion feasibility where onboarding is incomplete.",
+      "estBrandSpendUsd": 210000000,
+      "publishedAt": "2025-12-01"
+    }
+  ]
+}

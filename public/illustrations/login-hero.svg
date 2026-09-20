@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" role="img" aria-labelledby="loginTitle loginDesc">
+  <title id="loginTitle">PurpleGap product preview</title>
+  <desc id="loginDesc">Abstract dashboard cards and charts for biosimilar conversion intelligence</desc>
+  <defs>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="420" rx="28" fill="url(#lg)"/>
+  <circle cx="420" cy="60" r="80" fill="#6366f1" opacity="0.35"/>
+  <circle cx="80" cy="360" r="100" fill="#4338ca" opacity="0.4"/>
+  <rect x="36" y="48" width="448" height="324" rx="18" fill="url(#card)" opacity="0.97"/>
+  <rect x="56" y="72" width="120" height="10" rx="5" fill="#c7d2fe"/>
+  <rect x="56" y="92" width="200" height="16" rx="4" fill="#1e293b"/>
+  <rect x="56" y="120" width="160" height="8" rx="4" fill="#94a3b8"/>
+  <rect x="56" y="152" width="128" height="72" rx="12" fill="#eef2ff" stroke="#e0e7ff"/>
+  <rect x="196" y="152" width="128" height="72" rx="12" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <rect x="336" y="152" width="128" height="72" rx="12" fill="#ecfdf5" stroke="#d1fae5"/>
+  <rect x="68" y="168" width="48" height="8" rx="4" fill="#818cf8"/>
+  <rect x="68" y="184" width="72" height="18" rx="4" fill="#312e81"/>
+  <rect x="208" y="168" width="48" height="8" rx="4" fill="#94a3b8"/>
+  <rect x="208" y="184" width="64" height="18" rx="4" fill="#334155"/>
+  <rect x="348" y="168" width="48" height="8" rx="4" fill="#34d399"/>
+  <rect x="348" y="184" width="56" height="18" rx="4" fill="#065f46"/>
+  <rect x="56" y="244" width="408" height="108" rx="12" fill="#fff" stroke="#e2e8f0"/>
+  <rect x="76" y="300" width="24" height="32" rx="3" fill="#4f46e5"/>
+  <rect x="112" y="280" width="24" height="52" rx="3" fill="#818cf8"/>
+  <rect x="148" y="292" width="24" height="40" rx="3" fill="#a5b4fc"/>
+  <rect x="184" y="268" width="24" height="64" rx="3" fill="#4f46e5"/>
+  <rect x="220" y="288" width="24" height="44" rx="3" fill="#94a3b8"/>
+  <rect x="256" y="276" width="24" height="56" rx="3" fill="#6366f1"/>
+  <rect x="292" y="304" width="24" height="28" rx="3" fill="#cbd5e1"/>
+  <rect x="328" y="284" width="24" height="48" rx="3" fill="#818cf8"/>
+  <rect x="364" y="260" width="24" height="72" rx="3" fill="#4f46e5"/>
+  <rect x="400" y="296" width="24" height="36" rx="3" fill="#94a3b8"/>
+  <text x="76" y="268" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#64748b">Top states · illustrative Opportunity $</text>
+</svg>

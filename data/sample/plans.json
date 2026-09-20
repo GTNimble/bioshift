@@ -1,0 +1,56 @@
+{
+  "note": "Sample Part D plan formulary preferences for demo gap analysis. Not sourced from CMS formulary PUF.",
+  "plans": [
+    {
+      "planId": "demo-pbm-a",
+      "planName": "Summit Part D Choice",
+      "pbm": "Summit Rx Solutions (sample)",
+      "preferredByFamily": {
+        "adalimumab": "cyltezo",
+        "ustekinumab": "wezlana",
+        "pegfilgrastim": "udenyca",
+        "insulin_glargine": "semglee",
+        "insulin_aspart": "trurapi",
+        "ranibizumab": "cimerli",
+        "etanercept": "erelzi",
+        "trastuzumab": "kanjinti",
+        "rituximab": "truxima",
+        "filgrastim": "zarxio"
+      }
+    },
+    {
+      "planId": "demo-pbm-b",
+      "planName": "Harbor Medicare Rx",
+      "pbm": "Harbor Benefits (sample)",
+      "preferredByFamily": {
+        "adalimumab": "amjevita",
+        "ustekinumab": "pyzchiva",
+        "pegfilgrastim": "fulphila",
+        "insulin_glargine": "rezvoglar",
+        "insulin_aspart": "insulin_aspart_sanofi",
+        "ranibizumab": "byooviz",
+        "etanercept": "eticovo",
+        "trastuzumab": "ogivri",
+        "rituximab": "ruxience",
+        "filgrastim": "nivestym"
+      }
+    },
+    {
+      "planId": "demo-pbm-c",
+      "planName": "Northstar Dual Eligible PDP",
+      "pbm": "Northstar Pharmacy Benefit (sample)",
+      "preferredByFamily": {
+        "adalimumab": "hadlima",
+        "ustekinumab": "selarsdi",
+        "pegfilgrastim": "ziextenzo",
+        "insulin_glargine": "semglee",
+        "insulin_aspart": "trurapi",
+        "ranibizumab": "cimerli",
+        "etanercept": "erelzi",
+        "trastuzumab": "trazimera",
+        "rituximab": "riabni",
+        "filgrastim": "zarxio"
+      }
+    }
+  ]
+}

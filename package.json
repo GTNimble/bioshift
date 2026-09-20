@@ -1,0 +1,49 @@
+{
+  "name": "purplegap",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "data:ingest": "python3 scripts/ingest/download_purple_book.py && python3 scripts/ingest/download_cms_partd.py --mode api --names-file data/raw/cms_gnrc_names.json && python3 scripts/ingest/build_processed.py",
+    "data:purple": "python3 scripts/ingest/download_purple_book.py",
+    "data:cms": "python3 scripts/ingest/download_cms_partd.py --mode api --names-file data/raw/cms_gnrc_names.json",
+    "data:cms:csv": "python3 scripts/ingest/download_cms_partd.py --mode csv",
+    "data:build": "python3 scripts/ingest/build_processed.py",
+    "data:real": "python3 scripts/ingest/build_processed.py",
+    "data:sample": "python3 scripts/seed/load_sample.py",
+    "billing:grant-enterprise": "node scripts/grant-enterprise.mjs",
+    "data:nppes": "python3 scripts/ingest/enrich_nppes_contacts.py --limit 200",
+    "data:nppes:all": "python3 scripts/ingest/enrich_nppes_contacts.py --all",
+    "data:purple:changelog": "python3 scripts/ingest/build_purple_changelog.py",
+    "digest:preview": "node scripts/digest-preview.mjs",
+    "data:openpayments": "python3 scripts/ingest/enrich_open_payments.py --limit 50",
+    "data:openpayments:all": "python3 scripts/ingest/enrich_open_payments.py --all",
+    "data:partd-spend": "python3 scripts/ingest/download_partd_spend.py",
+    "data:partb": "python3 scripts/ingest/download_partb_practitioners.py --top 40",
+    "data:enrollment": "python3 scripts/ingest/enrich_enrollment_groups.py --limit 150",
+    "data:openpayments:score": "python3 scripts/ingest/score_open_payments.py"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.39.6",
+    "lucide-react": "^1.44.0",
+    "next": "14.2.35",
+    "react": "^18",
+    "react-dom": "^18",
+    "recharts": "^3.10.1",
+    "stripe": "^22.6.2",
+    "svix": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
