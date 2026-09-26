@@ -39,7 +39,6 @@ next-env.d.ts
 
 # Large CMS raw extracts (regenerate via npm run data:cms)
 data/raw/cms_partd_filtered.jsonl
-data/raw/purple_book_products.json
 
 # Demo-mode per-user watchlists (file backend)
 data/user_watchlists/*.json
