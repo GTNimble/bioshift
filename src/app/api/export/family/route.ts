@@ -72,7 +72,13 @@ export async function GET(req: NextRequest) {
   const contactNote = includeContact
     ? "\n# Contact columns from public NPPES (practice address/phone; no email in public registry). Outreach subject to TCPA."
     : "";
-  const note = `${CMS_CSV_NOTE}\n# Family export: ${detail.family.referenceBrand} (${detail.family.ingredient})${contactNote}`;
+  
+  const iraNote =
+    detail.family.iraStatusTags && detail.family.iraStatusTags.length > 0
+      ? `\n# IRA & CMS Policy Status: ${detail.family.iraStatusTags.map((tag) => tag.shortLabel).join("; ")}. See data/reference/ira_status.json for full details.`
+      : "";
+
+  const note = `${CMS_CSV_NOTE}\n# Family export: ${detail.family.referenceBrand} (${detail.family.ingredient})${iraNote}${contactNote}`;
   const body = `${note}\n${csvLines(headers, data)}`;
   return csvResponse(body, `purplegap-family-${familyId}-CY2024.csv`);
 }

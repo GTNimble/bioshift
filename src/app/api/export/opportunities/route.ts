@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import { computeOpportunities } from "@/lib/data";
+import { computeOpportunities, getFamilies } from "@/lib/data";
 import { requireFeature, planAllows } from "@/lib/apiAuth";
 import { CMS_CSV_NOTE, csvLines, csvResponse } from "@/lib/csv";
 import { PRO_EXPORT_ROW_LIMIT } from "@/lib/plans";
@@ -38,6 +38,9 @@ export async function GET(req: NextRequest) {
   const includeContact = planAllows(gate.session.plan, "provider_contacts");
   const contactMap = includeContact ? getCachedContactsMap() : {};
 
+  const families = getFamilies();
+  const familyMap = Object.fromEntries(families.map((f) => [f.familyId, f]));
+
   const headers = [
     "npi",
     "provider_name",
@@ -46,6 +49,7 @@ export async function GET(req: NextRequest) {
     "family_id",
     "ingredient",
     "reference_brand",
+    "ira_status",
     "brand_cost",
     "brand_claims",
     "biosimilar_claims",
@@ -59,6 +63,9 @@ export async function GET(req: NextRequest) {
   ];
 
   const rows = opps.map((o) => {
+    const family = familyMap[o.familyId];
+    const iraStatus =
+      family?.iraStatusTags?.map((tag) => tag.shortLabel).join("; ") || "";
     const base: (string | number)[] = [
       o.npi,
       o.providerName,
@@ -67,6 +74,7 @@ export async function GET(req: NextRequest) {
       o.familyId,
       o.ingredient,
       o.referenceBrand,
+      iraStatus,
       Math.round(o.brandCost),
       o.brandClaims,
       o.biosimilarClaims,
@@ -91,7 +99,8 @@ export async function GET(req: NextRequest) {
     : "";
 
   const honestyNote = "\n# Illustrative Opportunity $ = brand_gross × max(0, peer_bio_share − this_bio_share). Gross Part D; not net of rebates/DIR. peer_gap_pp is in percentage points.";
-  const body = `${CMS_CSV_NOTE}${honestyNote}${limitNote}${contactNote}\n${csvLines(headers, rows)}`;
+  const iraNote = "\n# ira_status: Medicare IRA and related CMS policy status (Negotiated, Selected 2028, GLOBE excluded, etc.). See data/reference/ira_status.json for full details and sources.";
+  const body = `${CMS_CSV_NOTE}${honestyNote}${iraNote}${limitNote}${contactNote}\n${csvLines(headers, rows)}`;
 
   const suffixParts = ["opportunities", "CY2024"];
   if (state) suffixParts.push(state);

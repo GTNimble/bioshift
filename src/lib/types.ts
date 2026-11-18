@@ -9,6 +9,27 @@ export interface DrugProduct {
   approvalYear: number;
 }
 
+export type IraStatusType =
+  | "NEGOTIATED"
+  | "SELECTED_2028"
+  | "ASP_PLUS_8"
+  | "GLOBE_EXCLUDED_WITH_BIOSIMILAR";
+
+export interface IraStatusTag {
+  type: IraStatusType;
+  title: string;
+  shortLabel: string;
+  detail: string;
+  startDate: string | null;
+  endDate: string | null;
+  sourceUrl: string;
+  timing_note: string;
+  mfp_usd?: number;
+  mfp_period?: string;
+  deselected?: boolean;
+  deselectionDate?: string;
+}
+
 export interface DrugFamily {
   familyId: string;
   ingredient: string;
@@ -18,6 +39,7 @@ export interface DrugFamily {
   partDRelevant: boolean;
   estAnnualPartDSpendUsd: number;
   products: DrugProduct[];
+  iraStatusTags?: IraStatusTag[];
 }
 
 export interface PrescriberRow {

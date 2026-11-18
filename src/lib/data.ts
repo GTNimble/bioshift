@@ -4,6 +4,7 @@ import plansData from "../../data/plans.json";
 import alertsData from "../../data/alerts.json";
 import purpleChangelogData from "../../data/purple_book_changelog.json";
 import metaData from "../../data/meta.json";
+import iraStatusData from "../../data/reference/ira_status.json";
 import type {
   DrugFamily,
   PrescriberRow,
@@ -12,6 +13,7 @@ import type {
   Opportunity,
   PurpleBookChangelog,
   PurpleBookChange,
+  IraStatusTag,
 } from "./types";
 
 export type DataMeta = {
@@ -32,8 +34,44 @@ export const DATA_BANNER =
 /** @deprecated use DATA_BANNER */
 export const SAMPLE_BANNER = DATA_BANNER;
 
+type IraStatusFile = {
+  version: string;
+  source_note: string;
+  explanation: Record<string, string>;
+  statuses: Array<{
+    familyId: string;
+    ingredient: string;
+    referenceBrand: string;
+    tags: IraStatusTag[];
+  }>;
+  key_dates: Array<{
+    date: string;
+    label: string;
+    description: string;
+    relevance: string;
+  }>;
+};
+
+const iraStatuses = iraStatusData as IraStatusFile;
+
+const iraStatusMap = new Map<string, IraStatusTag[]>(
+  iraStatuses.statuses.map((s) => [s.familyId, s.tags])
+);
+
+export function getIraKeyDates() {
+  return iraStatuses.key_dates;
+}
+
+export function getIraExplanations() {
+  return iraStatuses.explanation;
+}
+
 export function getFamilies(): DrugFamily[] {
-  return drugsData.families as DrugFamily[];
+  const families = drugsData.families as DrugFamily[];
+  return families.map((f) => ({
+    ...f,
+    iraStatusTags: iraStatusMap.get(f.familyId) ?? [],
+  }));
 }
 
 export function getFamily(familyId: string): DrugFamily | undefined {
@@ -261,6 +299,7 @@ export function familyConversionStats() {
       conversionGap: total > 0 ? brandClaims / total : 0,
       estAnnualPartDSpendUsd: f.estAnnualPartDSpendUsd,
       products: f.products,
+      iraStatusTags: f.iraStatusTags,
     };
   });
 }

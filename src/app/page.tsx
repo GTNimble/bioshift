@@ -16,11 +16,13 @@ import { OpportunityFormula } from "@/components/OpportunityFormula";
 import { OverviewActions, TopOpportunitiesTable } from "@/components/OverviewClient";
 import { OverviewCharts } from "@/components/OverviewCharts";
 import { SectionCard } from "@/components/ui/SectionCard";
-import { getKpis } from "@/lib/data";
+import { getKpis, getIraKeyDates } from "@/lib/data";
 import { formatUsd, formatPct, formatNumber } from "@/lib/format";
+import { IraKeyDates } from "@/components/IraKeyDates";
 
 export default function OverviewPage() {
   const kpis = getKpis();
+  const iraKeyDates = getIraKeyDates();
 
   return (
     <div>
@@ -102,6 +104,10 @@ export default function OverviewPage() {
       />
 
       <OpportunityFormula className="mb-6" />
+
+      <div className="mb-6">
+        <IraKeyDates dates={iraKeyDates} />
+      </div>
 
       <div className="mb-3 flex items-center justify-between">
         <h2 className="text-lg font-semibold text-slate-900">Top opportunities</h2>

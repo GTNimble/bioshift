@@ -20,6 +20,8 @@ import { FamilyDetailPanel } from "@/components/FamilyDetailPanel";
 import { SortableTh } from "@/components/list/SortableTh";
 import { FilterBar, FilterField, filterInputClass } from "@/components/list/FilterBar";
 import { useSortableTable } from "@/hooks/useSortableTable";
+import { IraStatusBadges } from "@/components/IraStatusBadge";
+import { getFamilies } from "@/lib/data";
 
 type NpiSortKey =
   | "providerName"
@@ -52,9 +54,20 @@ export function MakerShareClient({
   const [selectedState, setSelectedState] = useState<string | null>(null);
   const [familyDetailOpen, setFamilyDetailOpen] = useState(false);
 
+  const families = useMemo(() => getFamilies(), []);
+  const familyMap = useMemo(
+    () => Object.fromEntries(families.map((f) => [f.familyId, f])),
+    [families]
+  );
+
   const pack = useMemo(
     () => packs.find((p) => p.familyId === familyId) ?? packs[0] ?? null,
     [packs, familyId]
+  );
+
+  const currentFamily = useMemo(
+    () => (pack ? familyMap[pack.familyId] : null),
+    [pack, familyMap]
   );
 
   const canCsv = hasFeature("maker_share_pack") || hasFeature("csv_export");
@@ -130,6 +143,12 @@ export function MakerShareClient({
             ))}
           </select>
         </label>
+        {currentFamily?.iraStatusTags && currentFamily.iraStatusTags.length > 0 && (
+          <div className="flex flex-col gap-1">
+            <div className="text-xs font-medium text-slate-600">IRA status</div>
+            <IraStatusBadges tags={currentFamily.iraStatusTags} />
+          </div>
+        )}
         <button
           type="button"
           onClick={() => setFamilyDetailOpen(true)}

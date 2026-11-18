@@ -3,6 +3,7 @@ import { requireFeature } from "@/lib/apiAuth";
 import { CMS_CSV_NOTE, csvLines, csvResponse } from "@/lib/csv";
 import { buildMakerSharePacks } from "@/lib/makerShare";
 import { PRO_EXPORT_ROW_LIMIT } from "@/lib/plans";
+import { getFamilies } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
 
@@ -24,8 +25,13 @@ export async function GET(req: NextRequest) {
   const filtered = familyId ? packs.filter((p) => p.familyId === familyId) : packs;
   const limited = gate.session.plan === "pro";
 
+  const families = getFamilies();
+  const familyMap = Object.fromEntries(families.map((f) => [f.familyId, f]));
+
   const honesty =
     "\n# Maker share pack — brand vs biosimilar Part D claims mix. Illustrative opportunity $ is gross Part D; not net of rebates/DIR. For biosimilar manufacturers / BD.";
+  const iraNote =
+    "\n# ira_status: Medicare IRA and related CMS policy status. See data/reference/ira_status.json for full details.";
 
   if (level === "family") {
     const headers = [
@@ -34,6 +40,7 @@ export async function GET(req: NextRequest) {
       "reference_brand",
       "reference_applicant",
       "therapeutic_area",
+      "ira_status",
       "biosimilar_count",
       "brand_claims",
       "bio_claims",
@@ -43,22 +50,28 @@ export async function GET(req: NextRequest) {
       "bio_cost",
       "opportunity_usd",
     ];
-    const rows = filtered.map((p) => [
-      p.familyId,
-      p.ingredient,
-      p.referenceBrand,
-      p.referenceApplicant,
-      p.therapeuticArea,
-      p.biosimilarCount,
-      p.brandClaims,
-      p.bioClaims,
-      p.brandShare.toFixed(4),
-      p.bioShare.toFixed(4),
-      Math.round(p.brandCost),
-      Math.round(p.bioCost),
-      Math.round(p.opportunityUsd),
-    ]);
-    const body = `${CMS_CSV_NOTE}${honesty}\n${csvLines(headers, rows)}`;
+    const rows = filtered.map((p) => {
+      const family = familyMap[p.familyId];
+      const iraStatus =
+        family?.iraStatusTags?.map((tag) => tag.shortLabel).join("; ") || "";
+      return [
+        p.familyId,
+        p.ingredient,
+        p.referenceBrand,
+        p.referenceApplicant,
+        p.therapeuticArea,
+        iraStatus,
+        p.biosimilarCount,
+        p.brandClaims,
+        p.bioClaims,
+        p.brandShare.toFixed(4),
+        p.bioShare.toFixed(4),
+        Math.round(p.brandCost),
+        Math.round(p.bioCost),
+        Math.round(p.opportunityUsd),
+      ];
+    });
+    const body = `${CMS_CSV_NOTE}${honesty}${iraNote}\n${csvLines(headers, rows)}`;
     return csvResponse(body, "purplegap-maker-share-families-CY2024.csv");
   }
 
@@ -66,6 +79,7 @@ export async function GET(req: NextRequest) {
     const headers = [
       "family_id",
       "reference_brand",
+      "ira_status",
       "state",
       "brand_claims",
       "bio_claims",
@@ -76,10 +90,14 @@ export async function GET(req: NextRequest) {
     ];
     const rows: (string | number)[][] = [];
     for (const p of filtered) {
+      const family = familyMap[p.familyId];
+      const iraStatus =
+        family?.iraStatusTags?.map((tag) => tag.shortLabel).join("; ") || "";
       for (const s of p.stateConcentration) {
         rows.push([
           p.familyId,
           p.referenceBrand,
+          iraStatus,
           s.state,
           s.brandClaims,
           s.bioClaims,
@@ -90,13 +108,14 @@ export async function GET(req: NextRequest) {
         ]);
       }
     }
-    const body = `${CMS_CSV_NOTE}${honesty}\n${csvLines(headers, rows)}`;
+    const body = `${CMS_CSV_NOTE}${honesty}${iraNote}\n${csvLines(headers, rows)}`;
     return csvResponse(body, "purplegap-maker-share-states-CY2024.csv");
   }
 
   const headers = [
     "family_id",
     "reference_brand",
+    "ira_status",
     "npi",
     "provider_name",
     "state",
@@ -109,10 +128,14 @@ export async function GET(req: NextRequest) {
   ];
   let rows: (string | number)[][] = [];
   for (const p of filtered) {
+    const family = familyMap[p.familyId];
+    const iraStatus =
+      family?.iraStatusTags?.map((tag) => tag.shortLabel).join("; ") || "";
     for (const n of p.topBrandHeavyNpis) {
       rows.push([
         p.familyId,
         p.referenceBrand,
+        iraStatus,
         n.npi,
         n.providerName,
         n.state,
@@ -131,7 +154,7 @@ export async function GET(req: NextRequest) {
   const limitNote = limited
     ? `\n# Pro plan: limited to top ${PRO_EXPORT_ROW_LIMIT} NPI rows. Enterprise: unlimited.`
     : "";
-  const body = `${CMS_CSV_NOTE}${honesty}${limitNote}\n${csvLines(headers, rows)}`;
+  const body = `${CMS_CSV_NOTE}${honesty}${iraNote}${limitNote}\n${csvLines(headers, rows)}`;
   return csvResponse(
     body,
     `purplegap-maker-share-npis-CY2024${limited ? "-limited" : ""}.csv`
