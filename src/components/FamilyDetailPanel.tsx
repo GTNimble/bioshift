@@ -7,6 +7,7 @@ import { OpportunityHonesty } from "@/components/OpportunityFormula";
 import { ExportButton } from "@/components/ExportButton";
 import { DetailDrawer } from "@/components/DetailDrawer";
 import { AddToWatchlistButton } from "@/components/AddToWatchlistButton";
+import { IraStatusBadges } from "@/components/IraStatusBadge";
 
 export function FamilyDetailPanel({
   familyId,
@@ -92,6 +93,14 @@ function FamilyDetailBody({ detail }: { detail: FamilyDetail }) {
   const s = detail.stats;
   return (
     <div className="space-y-6">
+      {detail.family.iraStatusTags && detail.family.iraStatusTags.length > 0 && (
+        <section className="rounded-lg border border-indigo-100 bg-indigo-50/30 p-3">
+          <div className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-indigo-800">
+            IRA & CMS Policy Status
+          </div>
+          <IraStatusBadges tags={detail.family.iraStatusTags} />
+        </section>
+      )}
       <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Metric label="Biosimilar share" value={formatPct(s.biosimilarShare)} />
         <Metric label="Brand cost (gross)" value={formatUsd(s.brandCost, true)} />

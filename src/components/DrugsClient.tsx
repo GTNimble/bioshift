@@ -11,11 +11,12 @@ import { ExportButton } from "@/components/ExportButton";
 import { FilterBar, FilterField, filterInputClass, filterSelectClass } from "@/components/list/FilterBar";
 import { useSortableTable } from "@/hooks/useSortableTable";
 import { formatUsd, formatPct, formatNumber } from "@/lib/format";
-import type { DrugProduct } from "@/lib/types";
+import type { DrugProduct, IraStatusTag } from "@/lib/types";
 import { KpiCard } from "@/components/KpiCard";
 import { ChartCard } from "@/components/ui/ChartCard";
 import { MixDonutChart } from "@/components/charts/MixDonutChart";
 import { EmptyState } from "@/components/ui/EmptyState";
+import { IraStatusBadges } from "@/components/IraStatusBadge";
 
 type FamilyStat = {
   familyId: string;
@@ -32,6 +33,7 @@ type FamilyStat = {
   conversionGap: number;
   estAnnualPartDSpendUsd: number;
   products: DrugProduct[];
+  iraStatusTags?: IraStatusTag[];
 };
 
 type SortKey =
@@ -54,6 +56,7 @@ export function DrugsClient({
   const [selectedFamilyId, setSelectedFamilyId] = useState<string | null>(initialFamilyId);
   const [q, setQ] = useState("");
   const [area, setArea] = useState("");
+  const [iraFilter, setIraFilter] = useState("");
   const [sortKeyUi, setSortKeyUi] = useState<SortKey>("brandCost");
 
   const areas = useMemo(
@@ -61,10 +64,20 @@ export function DrugsClient({
     [stats]
   );
 
+  const iraStatuses = useMemo(() => {
+    const statuses = new Set<string>();
+    stats.forEach((s) => {
+      s.iraStatusTags?.forEach((tag) => statuses.add(tag.type));
+    });
+    return Array.from(statuses).sort();
+  }, [stats]);
+
   const filtered = useMemo(() => {
     const qq = q.trim().toLowerCase();
     return stats.filter((s) => {
       if (area && s.therapeuticArea !== area) return false;
+      if (iraFilter && !s.iraStatusTags?.some((tag) => tag.type === iraFilter))
+        return false;
       if (!qq) return true;
       return (
         s.referenceBrand.toLowerCase().includes(qq) ||
@@ -77,7 +90,7 @@ export function DrugsClient({
         )
       );
     });
-  }, [stats, q, area]);
+  }, [stats, q, area, iraFilter]);
 
   const { sorted, sortKey, sortDir, toggleSort, setSortKey, setSortDir } = useSortableTable<
     FamilyStat,
@@ -178,6 +191,20 @@ export function DrugsClient({
             ))}
           </select>
         </FilterField>
+        <FilterField label="IRA status">
+          <select
+            value={iraFilter}
+            onChange={(e) => setIraFilter(e.target.value)}
+            className={filterSelectClass}
+          >
+            <option value="">All statuses</option>
+            {iraStatuses.map((status) => (
+              <option key={status} value={status}>
+                {status.replace(/_/g, " ")}
+              </option>
+            ))}
+          </select>
+        </FilterField>
         <FilterField label="Sort by">
           <select
             value={sortKeyUi || sortKey}
@@ -232,10 +259,13 @@ export function DrugsClient({
               className="flex w-full flex-col gap-2 border-b border-slate-100 bg-slate-50/80 px-5 py-4 text-left transition hover:bg-indigo-50/50 sm:flex-row sm:items-center sm:justify-between"
             >
               <div>
-                <h3 className="text-lg font-semibold text-slate-900">
-                  {s.referenceBrand}{" "}
-                  <span className="text-base font-normal text-slate-500">({s.ingredient})</span>
-                </h3>
+                <div className="mb-1.5 flex flex-wrap items-center gap-2">
+                  <h3 className="text-lg font-semibold text-slate-900">
+                    {s.referenceBrand}{" "}
+                    <span className="text-base font-normal text-slate-500">({s.ingredient})</span>
+                  </h3>
+                  <IraStatusBadges tags={s.iraStatusTags} />
+                </div>
                 <p className="text-xs text-slate-500">
                   {s.therapeuticArea} · {s.biosimilarCount} biosimilars · {s.interchangeableCount}{" "}
                   interchangeable · Illust. Part D spend {formatUsd(s.estAnnualPartDSpendUsd, true)}

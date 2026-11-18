@@ -1,0 +1,255 @@
+{
+  "version": "2026-11-18",
+  "source_note": "Medicare Inflation Reduction Act (IRA) and related CMS policy status for biosimilar molecule families tracked by PurpleGap. All dates and sources verified as of 2026-11-18. Update this file as policies evolve.",
+  "explanation": {
+    "NEGOTIATED": "Medicare Drug Price Negotiation: a maximum fair price (MFP) is in effect. Products may be deselected if a biosimilar is bona fide marketed, ending the negotiated price on the specified date.",
+    "SELECTED_2028": "Selected for Medicare Drug Price Negotiation with prices starting 2028-01-01. This is the first cycle including Part B drugs. Biosimilar makers can request delay; the deadline for the next cycle is 2026-12-10.",
+    "ASP_PLUS_8": "Temporary Part B add-on: ASP + 8% of reference product ASP instead of 6%. Qualifying biosimilars paid on ASP as of 2022-09-30 get it from 2022-10-01 to 2027-09-30. Newer qualifying biosimilars first paid on ASP between 2022-10-01 and 2027-12-31 get 5 years from their first ASP quarter.",
+    "GLOBE_EXCLUDED_WITH_BIOSIMILAR": "CMS GLOBE model starting 2027-01-01 adds international-benchmark rebates on high-spend Part B single-source drugs/biologics in selected regions. Reference biologics are excluded once a US biosimilar is marketed."
+  },
+  "statuses": [
+    {
+      "familyId": "etanercept",
+      "ingredient": "etanercept",
+      "referenceBrand": "Enbrel",
+      "tags": [
+        {
+          "type": "NEGOTIATED",
+          "title": "Medicare Negotiated Price In Effect",
+          "shortLabel": "Negotiated",
+          "detail": "2026 Maximum Fair Price: $2,355 per 30-day supply, effective 2026-01-01. Not deselected.",
+          "startDate": "2026-01-01",
+          "endDate": null,
+          "mfp_usd": 2355,
+          "mfp_period": "30-day",
+          "deselected": false,
+          "sourceUrl": "https://www.cms.gov/initiatives/medicare-prescription-drug-affordability/overview/medicare-drug-price-negotiation-program/selected-drugs-negotiated-prices",
+          "timing_note": "Negotiated price creates strong incentive for immediate biosimilar conversion."
+        }
+      ]
+    },
+    {
+      "familyId": "ustekinumab",
+      "ingredient": "ustekinumab",
+      "referenceBrand": "Stelara",
+      "tags": [
+        {
+          "type": "NEGOTIATED",
+          "title": "Medicare Negotiated Price Ending Jan 1, 2027",
+          "shortLabel": "Negotiated (ending)",
+          "detail": "2026 Maximum Fair Price: $4,695, effective 2026-01-01. DESELECTED effective 2027-01-01 because a biosimilar is bona fide marketed. Negotiated price applies only through 2026-12-31.",
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "mfp_usd": 4695,
+          "mfp_period": "not specified",
+          "deselected": true,
+          "deselectionDate": "2027-01-01",
+          "sourceUrl": "https://www.cms.gov/files/document/fact-sheet-negotiated-prices-initial-price-applicability-year-2026.pdf",
+          "timing_note": "Critical conversion window: convert remaining Stelara prescribers before and immediately after Jan 1, 2027 deselection."
+        }
+      ]
+    },
+    {
+      "familyId": "bevacizumab",
+      "ingredient": "bevacizumab",
+      "referenceBrand": "Avastin",
+      "tags": [
+        {
+          "type": "GLOBE_EXCLUDED_WITH_BIOSIMILAR",
+          "title": "GLOBE Excluded (biosimilar marketed)",
+          "shortLabel": "GLOBE excluded",
+          "detail": "CMS GLOBE model (starting 2027-01-01) excludes reference biologics with a marketed US biosimilar from international-benchmark rebates.",
+          "startDate": "2027-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/priorities/innovation/innovation-models/globe",
+          "timing_note": "Reference biologic excluded from GLOBE rebates. Biosimilar conversion reduces Part B costs."
+        }
+      ]
+    },
+    {
+      "familyId": "infliximab",
+      "ingredient": "infliximab",
+      "referenceBrand": "Remicade",
+      "tags": [
+        {
+          "type": "SELECTED_2028",
+          "title": "Selected for 2028 Negotiation (Part B)",
+          "shortLabel": "Selected 2028",
+          "detail": "Selected for Medicare Drug Price Negotiation with prices starting 2028-01-01. First cycle including Part B drugs. Biosimilar makers' delay-request deadline: 2026-12-10.",
+          "startDate": "2028-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/files/document/factsheet-medicare-negotiation-selected-drug-list-ipay-2028.pdf",
+          "timing_note": "Negotiated prices begin Jan 1, 2028. Conversion window before negotiated pricing takes effect."
+        },
+        {
+          "type": "GLOBE_EXCLUDED_WITH_BIOSIMILAR",
+          "title": "GLOBE Excluded (biosimilar marketed)",
+          "shortLabel": "GLOBE excluded",
+          "detail": "CMS GLOBE model (starting 2027-01-01) excludes reference biologics with a marketed US biosimilar.",
+          "startDate": "2027-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/priorities/innovation/innovation-models/globe",
+          "timing_note": "Reference biologic excluded from GLOBE rebates starting Jan 1, 2027."
+        }
+      ]
+    },
+    {
+      "familyId": "rituximab",
+      "ingredient": "rituximab",
+      "referenceBrand": "Rituxan",
+      "tags": [
+        {
+          "type": "GLOBE_EXCLUDED_WITH_BIOSIMILAR",
+          "title": "GLOBE Excluded (biosimilar marketed)",
+          "shortLabel": "GLOBE excluded",
+          "detail": "CMS GLOBE model (starting 2027-01-01) excludes reference biologics with a marketed US biosimilar.",
+          "startDate": "2027-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/priorities/innovation/innovation-models/globe",
+          "timing_note": "Reference biologic excluded from GLOBE rebates starting Jan 1, 2027."
+        }
+      ]
+    },
+    {
+      "familyId": "trastuzumab",
+      "ingredient": "trastuzumab",
+      "referenceBrand": "Herceptin",
+      "tags": [
+        {
+          "type": "GLOBE_EXCLUDED_WITH_BIOSIMILAR",
+          "title": "GLOBE Excluded (biosimilar marketed)",
+          "shortLabel": "GLOBE excluded",
+          "detail": "CMS GLOBE model (starting 2027-01-01) excludes reference biologics with a marketed US biosimilar.",
+          "startDate": "2027-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/priorities/innovation/innovation-models/globe",
+          "timing_note": "Reference biologic excluded from GLOBE rebates starting Jan 1, 2027."
+        }
+      ]
+    },
+    {
+      "familyId": "adalimumab",
+      "ingredient": "adalimumab",
+      "referenceBrand": "Humira",
+      "tags": [
+        {
+          "type": "GLOBE_EXCLUDED_WITH_BIOSIMILAR",
+          "title": "GLOBE Excluded (biosimilar marketed)",
+          "shortLabel": "GLOBE excluded",
+          "detail": "CMS GLOBE model (starting 2027-01-01) excludes reference biologics with a marketed US biosimilar.",
+          "startDate": "2027-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/priorities/innovation/innovation-models/globe",
+          "timing_note": "Reference biologic excluded from GLOBE rebates starting Jan 1, 2027."
+        }
+      ]
+    },
+    {
+      "familyId": "pegfilgrastim",
+      "ingredient": "pegfilgrastim",
+      "referenceBrand": "Neulasta",
+      "tags": [
+        {
+          "type": "GLOBE_EXCLUDED_WITH_BIOSIMILAR",
+          "title": "GLOBE Excluded (biosimilar marketed)",
+          "shortLabel": "GLOBE excluded",
+          "detail": "CMS GLOBE model (starting 2027-01-01) excludes reference biologics with a marketed US biosimilar.",
+          "startDate": "2027-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/priorities/innovation/innovation-models/globe",
+          "timing_note": "Reference biologic excluded from GLOBE rebates starting Jan 1, 2027."
+        }
+      ]
+    },
+    {
+      "familyId": "filgrastim",
+      "ingredient": "filgrastim",
+      "referenceBrand": "Neupogen",
+      "tags": [
+        {
+          "type": "GLOBE_EXCLUDED_WITH_BIOSIMILAR",
+          "title": "GLOBE Excluded (biosimilar marketed)",
+          "shortLabel": "GLOBE excluded",
+          "detail": "CMS GLOBE model (starting 2027-01-01) excludes reference biologics with a marketed US biosimilar.",
+          "startDate": "2027-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/priorities/innovation/innovation-models/globe",
+          "timing_note": "Reference biologic excluded from GLOBE rebates starting Jan 1, 2027."
+        }
+      ]
+    },
+    {
+      "familyId": "ranibizumab",
+      "ingredient": "ranibizumab",
+      "referenceBrand": "Lucentis",
+      "tags": [
+        {
+          "type": "GLOBE_EXCLUDED_WITH_BIOSIMILAR",
+          "title": "GLOBE Excluded (biosimilar marketed)",
+          "shortLabel": "GLOBE excluded",
+          "detail": "CMS GLOBE model (starting 2027-01-01) excludes reference biologics with a marketed US biosimilar.",
+          "startDate": "2027-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/priorities/innovation/innovation-models/globe",
+          "timing_note": "Reference biologic excluded from GLOBE rebates starting Jan 1, 2027."
+        }
+      ]
+    },
+    {
+      "familyId": "denosumab",
+      "ingredient": "denosumab",
+      "referenceBrand": "Prolia",
+      "tags": [
+        {
+          "type": "GLOBE_EXCLUDED_WITH_BIOSIMILAR",
+          "title": "GLOBE Excluded (biosimilar marketed)",
+          "shortLabel": "GLOBE excluded",
+          "detail": "CMS GLOBE model (starting 2027-01-01) excludes reference biologics with a marketed US biosimilar.",
+          "startDate": "2027-01-01",
+          "endDate": null,
+          "sourceUrl": "https://www.cms.gov/priorities/innovation/innovation-models/globe",
+          "timing_note": "Reference biologic excluded from GLOBE rebates starting Jan 1, 2027."
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "date": "2026-12-10",
+      "label": "Biosimilar Delay Request Deadline",
+      "description": "Deadline for biosimilar makers to request delay for 2028 negotiation cycle (first Part B cycle).",
+      "relevance": "high"
+    },
+    {
+      "date": "2026-12-31",
+      "label": "Stelara Negotiated Price Ends",
+      "description": "Stelara (ustekinumab) deselected from negotiation program; negotiated price ($4,695 MFP) ends.",
+      "relevance": "critical"
+    },
+    {
+      "date": "2027-01-01",
+      "label": "GLOBE Model Starts & Stelara Deselection",
+      "description": "CMS GLOBE model begins (international-benchmark rebates; reference biologics with marketed biosimilars excluded). Stelara negotiated price no longer applies.",
+      "relevance": "critical"
+    },
+    {
+      "date": "2027-09-30",
+      "label": "First ASP+8% Expirations",
+      "description": "First wave of temporary Part B ASP+8% add-ons expire for qualifying biosimilars paid on ASP as of 2022-09-30.",
+      "relevance": "medium"
+    },
+    {
+      "date": "2028-01-01",
+      "label": "2028 Negotiated Prices Begin (Part B)",
+      "description": "Medicare negotiated prices take effect for 2028 selected drugs, including first Part B drugs (e.g., Remicade/infliximab if not delayed).",
+      "relevance": "high"
+    }
+  ],
+  "asp_plus_8_note": "ASP+8% (vs ASP+6%) is a per-biosimilar product benefit, not a family-level tag. Implementation requires first-ASP-quarter data per biosimilar product, which is not currently in the data model. To add: extend product model with firstAspQuarter, compute start/end dates, and tag individual biosimilar products.",
+  "notes": [
+    "Only families actually tracked by PurpleGap are tagged.",
+    "GLOBE_EXCLUDED_WITH_BIOSIMILAR is a general informational flag for Part B reference products with a marketed biosimilar.",
+    "Sources are official CMS pages; URLs and dates are preserved with each record.",
+    "Update this file as CMS policies evolve. Version field tracks last update."
+  ]
+}
